@@ -45,15 +45,16 @@ main{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
 }
 #section-one{
-width: 50%;
+width: 50vw;
 height: 100vh;
 display: flex;
 flex-direction: column;
 margin-left: 5vh;
+justify-content: center ;
 }
 #section-one article{
     width: 100%;
@@ -96,22 +97,24 @@ margin-left: 5vh;
 #section-img{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 50vw;
     height: 50%;
+    margin-top: 8vh;
 }
 #section-img img{
-    width: 50%;
     border-radius: 15px;
+    width: 50%;
 }
 #img-margem{
 margin-left: 1vw;
 }
 #section-two{
-width: 40%;
-height: 100%;
+width: 50vw;
+height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
+
 }
 #section-two img{
     width: 90%;
