@@ -47,24 +47,22 @@ main{
     align-items: center;
     height: 90vh;
     width: 100%;
+    margin-top: 3vh;
 }
 #section-one{
-width: 50vw;
+width: 60vw;
 height: 90vh;
 display: flex;
 flex-direction: column;
 margin-left: 5vh;
-justify-content: center ;
 }
 #section-one article{
     width: 100%;
     height: 50%;
 }
-#section-one article h2{
-    font-family: "Oswald", sans-serif ;
-    font-weight: 600;
-    font-size: 7vh;
-    line-height: 1;
+#section-one article img{
+ width: 80%;
+ margin-top: 6;
 }
 #section-one article h2 span{
     color: var(--verde);
@@ -97,19 +95,22 @@ justify-content: center ;
 #section-img{
     display: flex;
     flex-direction: row;
-    width: 50vw;
+    align-items: center;
+    align-items: end;
+    width: 100%;
     height: 50%;
-    margin-top: 8vh;
+    margin-top: 5vh;
 }
 #section-img img{
     border-radius: 15px;
-    width: 45%;
+    width: 48%;
+      
 }
 #img-margem{
-margin-left: 1vw;
+margin-left: 2vw;
 }
 #section-two{
-width: 50vw;
+width: 40vw;
 height: 90vh;
 display: flex;
 justify-content: center;
