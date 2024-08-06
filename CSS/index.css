@@ -15,7 +15,7 @@ background-color: var(--branco-fundo);
 }
 header{
 width: 100%;
-height: 8vh;
+height: 6vh;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -37,7 +37,7 @@ header ul {
 }
 header li{
     display: flex;
-    font-size: 2.5vh;
+    font-size: 2vh;
     font-weight: 400;
 }
 main{
@@ -45,9 +45,9 @@ main{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 90vh;
+    height: 85vh;
     width: 100%;
-    margin-top: 3vh;
+    margin-top: 4vh;
 }
 #section-one{
 width: 60vw;
