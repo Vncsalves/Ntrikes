@@ -13,17 +13,22 @@ font-family:  "Red Hat Display", sans-serif;
 color: var(--preto);
 background-color: var(--branco-fundo);
 }
+a{
+    color: var(--preto);
+    text-decoration: none;
+}
 header{
-width: 100%;
+width: 99%;
 height: 6vh;
 display: flex;
 flex-direction: row;
+align-items: center;
 justify-content: space-between;
 }
 header h1 {
     margin-left: 2vw;
     font-family: "Oswald", sans-serif;
-    font-size: 3vh;
+    font-size: 2.5vh;
     font-weight: 400 ;
     color: var(--verde);
     text-align: center;
@@ -34,6 +39,7 @@ header ul {
     flex-direction: row;
     justify-content: space-around;
     align-items: end;
+
 }
 header li{
     display: flex;
@@ -121,4 +127,29 @@ align-items: center;
     width: 90%;
     height: 90vh;
     border-radius: 20px;  
+}
+footer{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ background-color: var(--verde);
+ margin-top: 4vw;
+ width: 99VW;
+ height: 6vh;
+
+}
+footer img{
+    width: 1.5%;
+    margin-left: 2vw;}
+footer p{
+    color: var(--branco-fundo);
+    font-weight: 400;
+}
+footer h1{
+    font-family: "Oswald", sans-serif;
+    font-size: 2vh;
+    font-weight: 300 ;
+    color: var(--branco-fundo);
+    margin-right: 2vw;
 }
