@@ -43,7 +43,7 @@ header ul {
 }
 header li{
     display: flex;
-    font-size: 2vh;
+    font-size: 1.8vh;
     font-weight: 400;
 }
 main{
