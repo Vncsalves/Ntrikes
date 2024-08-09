@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+    --preto:#101010;
+    --branco-fundo:#f5f5f5;
+    --branco-segundario:#FEFEFE;
+    --cinza:#A8A8A8;
+    --cinza-segundario:#f0f0f0 ;
+    --verde:#04471C;
+}
+body{
+padding: 0;
+margin: 0;
+font-family:  "Red Hat Display", sans-serif;
+color: var(--preto);
+background-color: var(--branco-fundo);
+}
+a{
+    color: var(--preto);
+    text-decoration: none;
+}
+header{
+width: 100%;
+height: 6vh;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+}
+header h1 {
+    margin-left: 2vw;
+    font-family: "Oswald", sans-serif;
+    font-size: 2.5vh;
+    font-weight: 400 ;
+    color: var(--verde);
+    text-align: center;
+}
+header ul {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: end;
+}
+header li{
+    display: flex;
+    font-size: 2vh;
+    font-weight: 400;
+}
+main{
+    display: flex;
+
+    align-items: center;
+    width: 100vw;
+    height: 94vh;
+}
+main form{
+    background-color:var(--branco-fundo);
+    width: 50%;
+    height: 85%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+main form h1{
+    font-family: "Oswald", sans-serif;
+    color: var(--verde);
+    font-size: 5vh;
+    font-weight: 500 ;
+}
+
+main form input {
+    width: 80%;
+    height: 5.5vh;
+    border-radius: 10px;
+    background-color: var(--branco-segundario);
+    border: 1px solid transparent; /* Borda padrão transparente */
+    margin-top: 3vh;
+    padding: 2vh;
+    box-sizing: border-box; 
+}
+main form input:focus {
+    border-color: var(--cinza-segundario); /* Borda colorida ao focar */
+    outline: none;
+}
+#email::-webkit-input-placeholder{
+    color:var(--cinza);
+    font-size:1.8vh;
+    font-family:  "Red Hat Display", sans-serif;
+}
+#password::-webkit-input-placeholder{
+    color:var(--cinza);
+    font-size:1.8vh;
+    font-family:  "Red Hat Display", sans-serif;
+}
+#nome::-webkit-input-placeholder{
+    color:var(--cinza);
+    font-size:1.8vh;
+    font-family:  "Red Hat Display", sans-serif;
+}
+#cpf::-webkit-input-placeholder{
+    color:var(--cinza);
+    font-size:1.8vh;
+    font-family:  "Red Hat Display", sans-serif;
+}
+#nascimento::-webkit-input-placeholder{
+    color:var(--cinza);
+    font-size:1.8vh;
+    font-family:  "Red Hat Display", sans-serif;
+}
+#section-cpf-nasci{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 80%;
+    height: 5.5vh;
+}
+#section-cpf-nasci input{
+    width: 49%;
+    height: 5.5;
+}
+#bt-login{
+    width: 80%;
+    height: 6vh;
+    border-radius: 10px;
+    background-color: var(--verde);
+    color: var(--branco-fundo);
+    font-weight: 500;
+    font-size: 2vh;
+    align-items: center ;
+    margin-top: 2vh;
+}
+main form h2{
+    font-size: 1.8vh;
+    font-weight: 400;
+    margin-top: 3.5vh;
+    margin-bottom: 3.5vh;
+}
+#icons{
+    width: 20%;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 3vh;
+}
+main form h3{
+    font-size: 1.8vh;
+    font-weight: 400;
+    line-height: 0;
+}
+#img-logins{
+    width: 50%;
+    height: 85%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#img-logins img{
+    width: 65%;
+    border-radius: 20px  0px 0px 20px;
+}
