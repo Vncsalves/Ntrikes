@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
 :root {
   --preto: #101010;
   --branco-fundo: #f5f5f5;
@@ -7,18 +8,21 @@
   --cinza-segundario: #f0f0f0;
   --verde: #04471c;
 }
-body {
-  padding: 0;
+
+body, html {
   margin: 0;
+  padding: 0;
   font-family: "Red Hat Display", sans-serif;
   color: var(--preto);
   background-color: var(--branco-fundo);
-  overflow-x: hidden;
+  overflow-x: hidden; /* Evita rolagem horizontal */
 }
+
 a {
   color: var(--preto);
   text-decoration: none;
 }
+
 header {
   width: 100%;
   height: 6vh;
@@ -27,6 +31,7 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+
 header h1 {
   margin-left: 2vw;
   font-family: "Oswald", sans-serif;
@@ -35,6 +40,7 @@ header h1 {
   color: var(--verde);
   text-align: center;
 }
+
 header ul {
   width: 40%;
   display: flex;
@@ -42,44 +48,49 @@ header ul {
   justify-content: space-around;
   align-items: end;
 }
+
 header li {
   display: flex;
   font-size: 1.8vh;
   font-weight: 400;
 }
+
 main {
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+
 #carrosel {
-  width: 96vw;
+  width: 96%;
   height: 25vh;
   background-color: var(--verde);
   margin-top: 2vh;
   border-radius: 20px;
 }
+
 #escrita-cards {
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin-top: 2vh;
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  margin-top: 2vh;
 }
+
 #escrita {
   width: 50%;
   height: 40vh;
 }
+
 #escrita-cards section h1 {
   margin-left: 2vw;
   font-family: "Oswald", sans-serif;
   font-size: 4vh;
   font-weight: 400;
 }
+
 #escrita-cards section h2 {
   margin-left: 2vw;
   font-size: 2.15vh;
@@ -88,9 +99,11 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 #escrita-cards section img {
   border-radius: 20px;
 }
+
 #cards {
   width: 40%;
   height: 44vh;
@@ -99,6 +112,7 @@ main {
   justify-content: space-evenly;
   margin-right: 1.5vw;
 }
+
 #cards-superior {
   width: 100%;
   height: 21vh;
@@ -106,18 +120,23 @@ main {
   flex-direction: row;
   justify-content: space-evenly;
 }
+
+#img-1, #img-2, #img-3, #img-4 {
+  border-radius: 15px;
+}
+
 #img-1 {
   width: 20vw;
   height: 20vh;
   background-image: url(../Assets/img-card-um.jpg);
-  border-radius: 15px;
 }
+
 #img-2 {
   width: 15vw;
   height: 20vh;
   background-image: url(../Assets/img-card-dois.jpg);
-  border-radius: 15px;
 }
+
 #cards-inferior {
   width: 100%;
   height: 21vh;
@@ -126,33 +145,35 @@ main {
   justify-content: space-evenly;
   align-items: end;
 }
+
 #img-3 {
   width: 23vw;
   height: 21vh;
   background-image: url(../Assets/img-card-tres.jpg);
-  border-radius: 15px;
 }
+
 #img-4 {
   width: 12vw;
   height: 21vh;
   background-image: url(../Assets/img-card-quatro.jpg);
-  border-radius: 15px;
 }
+
 #filtros {
   display: flex;
   flex-direction: row;
-  width: 96vw;
+  width: 100%;
   height: 8vh;
   justify-content: end;
   align-items: center;
   margin-top: 3vh;
-
 }
+
 #filtros h1 {
   font-family: "Red Hat Display", sans-serif;
   font-size: 2.5vh;
   font-weight: 400;
 }
+
 #filtros select {
   background-color: var(--verde);
   color: var(--branco-fundo);
@@ -165,8 +186,9 @@ main {
   font-weight: 300;
   border-radius: 5px;
 }
-#filtros option{
-   background-color: var(--branco-segundario);
+
+#filtros option {
+  background-color: var(--branco-segundario);
   color: var(--preto);
   border: 1px solid var(--verde);
   width: 20%;
@@ -177,50 +199,86 @@ main {
   font-weight: 300;
   border-radius: 5px;
 }
+
 #filtros option:hover{
-    background-color: var(--verde);
+  background-color: var(--verde);
 }
 #escrita-promos{
-    width: 60%
+  width: 58%
 }
 #filtros-card{
-    width: 40%;
-    height: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  width: 40%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-.itens-venda{
-    width: 15vw;
-    height: 45vh;
-    border: 1px solid var(--cinza);
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
+.div-itens {
+  display: flex;
+  flex-direction: row;
+  width: 100%; /* Ajuste para a largura total do contêiner pai */
+  overflow-x: auto; /* Permite rolagem horizontal */
+  align-items: center;
+  gap: 2vh; /* Espaçamento entre os itens */
+  padding: 0 1vw; /* Adiciona um pouco de espaçamento interno */
+  box-sizing: border-box; /* Garante que padding não afete a largura total */
 }
-.img-itens{
-    width: 100%;
-    height: 77%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #04471c;
+
+/* Adiciona uma pseudo-classe para os itens com largura fixa */
+.itens-venda {
+  width: 20vw;
+  height: 48vh;
+  border: 1px solid var(--cinza);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0; /* Impede que os itens diminuam de tamanho */
 }
-.itens-venda h1{
-    font-size: 2.3vh;
-    font-family: "Red Hat Display", sans-serif;
-    font-weight: 400;
-    margin: 1.1vh 0vw 0vh 0.5vw;
+
+.img-itens {
+  width: 100%;
+  height: 77%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.itens-venda h2{
-    font-size: 1.7vh;
-    font-family: "Red Hat Display", sans-serif;
-    font-weight: 400;
-    margin: 0vh 0vw 0vh 0.5vw;
+
+.itens-venda h1 {
+  font-size: 2.3vh;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  margin: 1.1vh 0vw 0vh 0.5vw;
 }
-.itens-venda h3{
-    font-size: 1.3vh;
-    font-family: "Red Hat Display", sans-serif;
-    font-weight: 400;
-    margin: 1vh 0vw 0vh 0.5vw;
+
+.itens-venda h2 {
+  font-size: 1.7vh;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  margin: 0vh 0vw 0vh 0.5vw;
+}
+.itens-venda h2 span {
+  font-size: 1.7vh;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  color: var(--verde);
+  margin: 0vh 0vw 0vh 0.5vw;
+}
+
+.itens-venda h3 {
+  font-size: 1.4vh;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  margin: 1vh 0vw 0vh 0.5vw;
+}
+.escrita-itens{
+  width: 96%;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+}
+.escrita-itens h1{
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
 }
