@@ -9,13 +9,15 @@
   --verde: #04471c;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   font-family: "Red Hat Display", sans-serif;
   color: var(--preto);
   background-color: var(--branco-fundo);
-  overflow-x: hidden; /* Evita rolagem horizontal */
+  overflow-x: hidden;
+  /* Evita rolagem horizontal */
 }
 
 a {
@@ -121,7 +123,10 @@ main {
   justify-content: space-evenly;
 }
 
-#img-1, #img-2, #img-3, #img-4 {
+#img-1,
+#img-2,
+#img-3,
+#img-4 {
   border-radius: 15px;
 }
 
@@ -200,28 +205,36 @@ main {
   border-radius: 5px;
 }
 
-#filtros option:hover{
+#filtros option:hover {
   background-color: var(--verde);
 }
-#escrita-promos{
+
+#escrita-promos {
   width: 58%
 }
-#filtros-card{
+
+#filtros-card {
   width: 40%;
   height: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+
 .div-itens {
   display: flex;
   flex-direction: row;
-  width: 100%; /* Ajuste para a largura total do contêiner pai */
-  overflow-x: auto; /* Permite rolagem horizontal */
+  width: 100%;
+  /* Ajuste para a largura total do contêiner pai */
+  overflow-x: auto;
+  /* Permite rolagem horizontal */
   align-items: center;
-  gap: 2vh; /* Espaçamento entre os itens */
-  padding: 0 1vw; /* Adiciona um pouco de espaçamento interno */
-  box-sizing: border-box; /* Garante que padding não afete a largura total */
+  gap: 2vh;
+  /* Espaçamento entre os itens */
+  padding: 0 1vw;
+  /* Adiciona um pouco de espaçamento interno */
+  box-sizing: border-box;
+  /* Garante que padding não afete a largura total */
 }
 
 /* Adiciona uma pseudo-classe para os itens com largura fixa */
@@ -232,7 +245,8 @@ main {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  flex-shrink: 0; /* Impede que os itens diminuam de tamanho */
+  flex-shrink: 0;
+  /* Impede que os itens diminuam de tamanho */
 }
 
 .img-itens {
@@ -256,6 +270,7 @@ main {
   font-weight: 400;
   margin: 0vh 0vw 0vh 0.5vw;
 }
+
 .itens-venda h2 span {
   font-size: 1.7vh;
   font-family: "Red Hat Display", sans-serif;
@@ -270,13 +285,15 @@ main {
   font-weight: 500;
   margin: 1vh 0vw 0vh 0.5vw;
 }
-.escrita-itens{
+
+.escrita-itens {
   width: 96%;
   height: 4vh;
   display: flex;
   align-items: center;
 }
-.escrita-itens h1{
+
+.escrita-itens h1 {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 400;
   margin-top: 3vh;

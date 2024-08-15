@@ -1,39 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
-:root{
-    --preto:#101010;
-    --branco-fundo:#f5f5f5;
-    --branco-segundario:#FEFEFE;
-    --cinza:#A8A8A8;
-    --cinza-segundario:#f0f0f0 ;
-    --verde:#04471C;
+
+:root {
+    --preto: #101010;
+    --branco-fundo: #f5f5f5;
+    --branco-segundario: #FEFEFE;
+    --cinza: #A8A8A8;
+    --cinza-segundario: #f0f0f0;
+    --verde: #04471C;
 }
-body{
-padding: 0;
-margin: 0;
-font-family:  "Red Hat Display", sans-serif;
-color: var(--preto);
-background-color: var(--branco-fundo);
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Red Hat Display", sans-serif;
+    color: var(--preto);
+    background-color: var(--branco-fundo);
 }
-a{
+
+a {
     color: var(--preto);
     text-decoration: none;
 }
-header{
-width: 100%;
-height: 6vh;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
+
+header {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
+
 header h1 {
     margin-left: 2vw;
     font-family: "Oswald", sans-serif;
     font-size: 2.5vh;
-    font-weight: 400 ;
+    font-weight: 400;
     color: var(--verde);
     text-align: center;
 }
+
 header ul {
     width: 40%;
     display: flex;
@@ -41,20 +47,23 @@ header ul {
     justify-content: space-around;
     align-items: end;
 }
-header li{
+
+header li {
     display: flex;
     font-size: 1.8vh;
     font-weight: 400;
 }
-main{
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 90vh;
 }
-main form{
-    background-color:var(--branco-fundo);
+
+main form {
+    background-color: var(--branco-fundo);
     width: 40%;
     height: 85%;
     display: flex;
@@ -62,42 +71,51 @@ main form{
     align-items: center;
     flex-direction: column;
 }
-main form h1{
+
+main form h1 {
     font-family: "Oswald", sans-serif;
     color: var(--verde);
     font-size: 4vh;
-    font-weight: 500 ;
+    font-weight: 500;
 }
+
 main form input {
     width: 80%;
     height: 5.5vh;
     border-radius: 10px;
     background-color: var(--branco-segundario);
-    border: 1px solid transparent; /* Borda padrão transparente */
+    border: 1px solid transparent;
+    /* Borda padrão transparente */
     margin-top: 3vh;
     padding: 2vh;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
+
 main form input:focus {
-    border-color: var(--cinza-segundario); /* Borda colorida ao focar */
+    border-color: var(--cinza-segundario);
+    /* Borda colorida ao focar */
     outline: none;
 }
-#email::-webkit-input-placeholder{
-    color:var(--cinza);
-    font-size:1.8vh;
-    font-family:  "Red Hat Display", sans-serif;
+
+#email::-webkit-input-placeholder {
+    color: var(--cinza);
+    font-size: 1.8vh;
+    font-family: "Red Hat Display", sans-serif;
 }
-#password::-webkit-input-placeholder{
-    color:var(--cinza);
-    font-size:1.8vh;
-    font-family:  "Red Hat Display", sans-serif;
+
+#password::-webkit-input-placeholder {
+    color: var(--cinza);
+    font-size: 1.8vh;
+    font-family: "Red Hat Display", sans-serif;
 }
-p{
+
+p {
     margin-top: 3vh;
     color: var(--cinza);
     font-size: 1.5vh;
 }
-#bt-login{
+
+#bt-login {
     width: 80%;
     height: 6vh;
     border-radius: 10px;
@@ -105,16 +123,18 @@ p{
     color: var(--branco-fundo);
     font-weight: 500;
     font-size: 2vh;
-    align-items: center ;
+    align-items: center;
     margin-top: 1vh;
 }
-main form h2{
+
+main form h2 {
     font-size: 1.8vh;
     font-weight: 400;
     margin-top: 3.5vh;
     margin-bottom: 3.5vh;
 }
-#icons{
+
+#icons {
     width: 35%;
     height: 8vh;
     display: flex;
@@ -123,12 +143,14 @@ main form h2{
     justify-content: space-evenly;
     margin-bottom: 3vh;
 }
-main form h3{
+
+main form h3 {
     font-size: 1.8vh;
     font-weight: 400;
     line-height: 0;
 }
-#img-logins{
+
+#img-logins {
     width: 40%;
     height: 80%;
     display: flex;
@@ -136,35 +158,39 @@ main form h3{
     justify-content: center;
     align-items: center;
 }
+
 #duas-imgs-login {
-display: flex;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-height: 100%;
-width: 30%;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
 }
 
-#duas-imgs-login img{
+#duas-imgs-login img {
     width: 100%;
     border-radius: 10px;
     margin-right: 3vh;
 }
-#uma-img-login{
-height: 100%;
-width: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
+
+#uma-img-login {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
-.img-espaco{
+
+.img-espaco {
     width: 55%;
     border-radius: 10px;
     margin-top: 2vh;
 }
-#uma-img-login img{
+
+#uma-img-login img {
     border-radius: 10px;
     width: 100%;
 }
